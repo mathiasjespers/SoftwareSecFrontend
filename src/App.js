@@ -1,12 +1,14 @@
 import './App.css';
-import LoginButton from './components/loginButton';
-import LogoutButton from './components/logoutButton';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes } from './routes';
 
 function App() {
+
   return (
     <div className="App">
-        <LoginButton />
-        <LogoutButton />
+      <Router>
+        <Routes />
+      </Router>
     </div>
   );
 }
