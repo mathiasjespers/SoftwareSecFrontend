@@ -1,11 +1,12 @@
 import React from 'react';
+import Game from './../components/game/Game'
 
-const Game = props => {
+const GameView = props => {
   return (
-    <div>
-      <h3>Game</h3>
-    </div>
+      <div>
+        <Game />
+      </div>
   );
 };
 
-export default Game;
+export default GameView;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Game from './views/game';
+import GameView from './views/game';
 import Ranking from './views/ranking';
-import Profile from './views/profile';
+import ProfileView from './views/profile';
 import Navbar from './components/navbar/Navbar';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
@@ -10,12 +10,12 @@ export const Routes = () => {
     <div>
       <Navbar />
       <Switch>
-        <Route exact path="/Game" component={Game} />
+        <Route exact path="/Game" component={GameView} />
         <Route exact path="/">
           <Redirect to="/Game" />
         </Route>
         <Route exact path="/Ranking" component={Ranking} />
-        <Route exact path="/Profile" component={Profile} />
+        <Route exact path="/Profile" component={ProfileView} />
       </Switch>
     </div>
   );
