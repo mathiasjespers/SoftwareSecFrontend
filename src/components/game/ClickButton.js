@@ -25,7 +25,7 @@ class ClickButton extends React.Component    {
               );
             }, this)}
           </ul>
-          <Timer settingSeconds={this.state.selectedSeconds} />
+          <Timer settingSeconds={parseFloat(this.state.selectedSeconds)} />
         </div>
       );
     }

@@ -1,8 +1,6 @@
 import axios from 'axios';
-import { useAuth0 } from '@auth0/auth0-react';
 
 const baseUrl = process.env.REACT_APP_API_URL;
-const { user } = useAuth0();
 
 /*
 const config = {
@@ -10,11 +8,12 @@ const config = {
 };
 */
 
-const saveScore = (score) => {
+export function saveScore(uid, name, score) {
     let bodyFormData = new FormData();
-    bodyFormData.append('uid', user.uid);
-    bodyFormData.append('name', user.name);
+    bodyFormData.append('uid', uid);
+    bodyFormData.append('name', name);
     bodyFormData.append('score', score);
+    console.log(uid + " " + name + " " + score)
     axios({
         method: 'post',
         url: baseUrl + '/score',
@@ -26,5 +25,3 @@ const saveScore = (score) => {
         console.log(error);
     });
 }
-
-export default saveScore;
