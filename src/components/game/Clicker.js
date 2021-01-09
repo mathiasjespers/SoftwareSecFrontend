@@ -41,7 +41,7 @@ class Clicker extends React.Component   {
               <div>
                 <button onClick={this.onFirstClick} className={this.props.class}>{this.state.buttonTxt}</button>
               </div>
-              <Link className="btn again-btn" onClick={saveScore(user.user_id, user.name, this.state.count)} to="/">Save Score & Play Again</Link>
+              <Link className="btn again-btn" onClick={saveScore(user.sub, user.name, this.state.count)} to="/">Save Score & Play Again</Link>
             </div>
           </div>
         );
@@ -58,7 +58,7 @@ class Clicker extends React.Component   {
               <div>
                 <button onClick={this.onFirstClick} className={this.props.class}>{this.state.buttonTxt}</button>
               </div>
-              <Link className="btn again-btn" to="/">Save Score & Play Again</Link>
+              <Link className="btn again-btn" to="/">Play Again</Link>
             </div>
           </div>
         );

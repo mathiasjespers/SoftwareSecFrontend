@@ -9,11 +9,16 @@ const config = {
 */
 
 export function saveScore(uid, name, score) {
+    /*
     let bodyFormData = new FormData();
+    console.log(score);
     bodyFormData.append('uid', uid);
     bodyFormData.append('name', name);
     bodyFormData.append('score', score);
-    console.log(uid + " " + name + " " + score)
+    */
+
+    let bodyFormData = { uid: uid, name: name, score: score };
+
     axios({
         method: 'post',
         url: baseUrl + '/score',
@@ -24,4 +29,19 @@ export function saveScore(uid, name, score) {
     }, (error) => {
         console.log(error);
     });
+}
+
+export async function getScore(uid)   {
+    let answer = "";
+    await axios({
+        method: 'get',
+        url: baseUrl + '/highscore/' + uid,
+    })
+    .then((response) => {
+        answer = response.data.highscore;
+        console.log(answer);
+    }, (error) => {
+        console.log(error);
+    });
+    return answer;
 }
