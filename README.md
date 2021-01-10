@@ -2,13 +2,13 @@
 - Publiek url: https://mathiasjespers.be 
 - Hosting via [Combell](https://www.combell.com/en/). De webtoepassing maakt gebruik van React en [Auth0](https://auth0.com/)
 
----
+
 ## HTTPS
 - Indien er een http request naar mathiasjespers.be wordt gestuurd dan wordt er een 301 response gestuurd
 - Alle request worden over https verstuurd  
 - mathiasjespers.be maakt gebruik van een ssl certificaat via [Let's Encrypt](https://letsencrypt.org/#)
 
----
+
 ## Registratie en Authenticatie
 Users registreren op mathiasjespers.be via de auth0 api. Persoonlijke gegevens worden ook door auth0 bijgehouden. Gebruikers kunnen ook met hun google account inloggen. De google gegevens worden dan gebruikt om een auth0 login aan te maken voor de gebruiker.
 Wachtwoord policy:
@@ -17,7 +17,7 @@ Wachtwoord policy:
 - het wachtwoord moet minsten één kleine letter, één hoofdletter en één nummer bevatten
 - het is mogelijk om het wachtwoord te plakken
 
----
+
 ## Bescherming persoonlijke gegevens
 1. De webtoepassing is conform met de privacy wetgeving. 
 2. De User kan de Privacyverklaring ten alle tijden raadplegen. 
@@ -25,13 +25,13 @@ Wachtwoord policy:
 4. De user kan zijn gegvens opvragen en wissen. 
 5. Indien de user bezwaar heeft kan hij contact opzoeken, zoals vermeld in de privacy verklaring.
 
----
+
 ## Maatregelen tegen courante aanvallen
 1. De webtoepassing is beveiligd tegen de opgelijste courante aanvallen.
 3. Er worden maatregellen getroven tegen typische web vulnerabilities.
 2. Geheimen worden beveiligd.
 
----
+
 ## Verwerkingsregister
 1. Contactgegegevens -bedrijfsnaam: Mathias Jespers -adress: Jan Blockxstraat 10, 1030 Schaarbeek -email: mathias.jespers@student.ehb.be
 2. Categorie persoonsgegevens: naam, voornaam, email en passwoord 
