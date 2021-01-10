@@ -11,6 +11,7 @@
 
 ## Registratie en Authenticatie
 Users registreren op mathiasjespers.be via de auth0 api. Persoonlijke gegevens worden ook door auth0 bijgehouden. Gebruikers kunnen ook met hun google account inloggen. De google gegevens worden dan gebruikt om een auth0 login aan te maken voor de gebruiker.
+
 Wachtwoord policy:
 - alle 'printable' ASCII karakters worden aanvaard in het wachtwoord
 - het wachtwoord moet minsten 8 charachters bevatten
