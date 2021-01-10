@@ -1,5 +1,6 @@
 # Mathias Jespers' Usseless Clicking Game
-Publiek url: https://mathiasjespers.be Ik maakte gebruik van Combell voor de hosting. De webtoepassing maakt gebruik van React en [Auth0](https://auth0.com/)
+Publiek url: https://mathiasjespers.be 
+Hosting via [Combell](https://www.combell.com/en/). De webtoepassing maakt gebruik van React en [Auth0](https://auth0.com/)
 
 ---
 ## HTTPS
