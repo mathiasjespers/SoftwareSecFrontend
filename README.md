@@ -20,17 +20,17 @@ Wachtwoord policy:
 
 
 ## Bescherming persoonlijke gegevens
-1. De webtoepassing is conform met de privacy wetgeving. 
-2. De User kan de Privacyverklaring ten alle tijden raadplegen. 
-3. De webtoepassing maakt enkel gebruik van noodzakelijke cookies waar hij van op de hoogte wordt gesteld bij het aanmelden. 
-4. De user kan zijn gegvens opvragen en wissen. 
-5. Indien de user bezwaar heeft kan hij contact opzoeken, zoals vermeld in de privacy verklaring.
+- De webtoepassing is conform met de privacy wetgeving. 
+- De User kan de Privacyverklaring ten alle tijden raadplegen. 
+- De webtoepassing maakt enkel gebruik van noodzakelijke cookies waar hij van op de hoogte wordt gesteld bij het aanmelden. 
+- De user kan zijn gegvens opvragen en wissen. 
+- Indien de user bezwaar heeft kan hij contact opzoeken, zoals vermeld in de privacy verklaring.
 
 
 ## Maatregelen tegen courante aanvallen
-1. De webtoepassing is beveiligd tegen de opgelijste courante aanvallen.
-3. Er worden maatregellen getroven tegen typische web vulnerabilities.
-2. Geheimen worden beveiligd.
+- De webtoepassing is beveiligd tegen de opgelijste courante aanvallen.
+- Er worden maatregellen getroven tegen typische web vulnerabilities.
+- Geheimen worden beveiligd.
 
 
 ## Verwerkingsregister
