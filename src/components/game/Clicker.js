@@ -15,7 +15,7 @@ class Clicker extends React.Component   {
     }
 
     onFirstClick = () => {
-      let stylesheet = document.styleSheets.item(1);
+      let stylesheet = document.styleSheets[0];
       stylesheet.insertRule(".table-ul { pointer-events: none; }");
       this.state.func();
       this.setState({func: this.countClick});

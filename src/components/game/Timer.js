@@ -37,7 +37,6 @@ class Timer extends React.Component {
       if (completed > 100) {completed = 100}
 
       let buttonClass = 'btn btn-click btn-block';
-      let againClass = 'btn again-btn hidden';
       if(this.state.running) {
         buttonClass = 'btn btn-primary btn-block'
       }
@@ -58,7 +57,6 @@ class Timer extends React.Component {
       if(leftSeconds <= 0.0) {
         clearInterval(this.timer);
         buttonClass = 'btn btn-danger btn-block disabled';
-        againClass = 'again-btn';
       }
           return (
             <div>

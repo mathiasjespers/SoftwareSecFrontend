@@ -8,7 +8,7 @@ const Navbar = () => {
     
   return (
     <nav>
-        <h2>Clicking Game</h2>
+        <h2>NTM Fabien</h2>
         <div className="link-item-div">
             <Link className="link-item" to="/Game">Home</Link>
             <Link className="link-item" to="/ranking">Ranking</Link>

@@ -5,7 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const Game = () => {
 
-    const { user, isAuthenticated } = useAuth0();
+    const { isAuthenticated } = useAuth0();
 
     if (isAuthenticated)    {
         return  (
