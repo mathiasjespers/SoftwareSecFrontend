@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Mathias Jespers' Usseless Clicking Game
+- Publiek url: https://mathiasjespers.be 
+- Hosting via [Combell](https://www.combell.com/en/). De webtoepassing maakt gebruik van React en [Auth0](https://auth0.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## HTTPS
+- Indien er een http request naar mathiasjespers.be wordt gestuurd dan wordt er een 301 response gestuurd
+- Alle request worden over https verstuurd  
+- mathiasjespers.be maakt gebruik van een ssl certificaat via [Let's Encrypt](https://letsencrypt.org/#)
 
-In the project directory, you can run:
 
-### `yarn start`
+## Registratie en Authenticatie
+Users registreren op mathiasjespers.be via de auth0 api. Persoonlijke gegevens worden ook door auth0 bijgehouden. Gebruikers kunnen ook met hun google account inloggen. De google gegevens worden dan gebruikt om een auth0 login aan te maken voor de gebruiker.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Wachtwoord policy:
+- alle 'printable' ASCII karakters worden aanvaard in het wachtwoord
+- het wachtwoord moet minsten 8 charachters bevatten
+- het wachtwoord moet minsten één kleine letter, één hoofdletter en één nummer bevatten
+- het is mogelijk om het wachtwoord te plakken
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Bescherming persoonlijke gegevens
+- De webtoepassing is conform met de privacy wetgeving. 
+- De User kan de Privacyverklaring ten alle tijden raadplegen. 
+- De webtoepassing maakt enkel gebruik van noodzakelijke cookies waar hij van op de hoogte wordt gesteld bij het aanmelden. 
+- De user kan zijn gegvens opvragen en wissen. 
+- Indien de user bezwaar heeft kan hij contact opzoeken, zoals vermeld in de privacy verklaring.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Maatregelen tegen courante aanvallen
+- De webtoepassing is beveiligd tegen de opgelijste courante aanvallen.
+- Er worden maatregellen getroven tegen typische web vulnerabilities.
+- Geheimen worden beveiligd.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Verwerkingsregister
+1. Contactgegegevens -bedrijfsnaam: Mathias Jespers -adress: Jan Blockxstraat 10, 1030 Schaarbeek -email: mathias.jespers@student.ehb.be
+2. Categorie persoonsgegevens: naam, voornaam, email en passwoord 
+3. Categorie betrokkennen: users
+4. Grondslag voor verwerking: uitvoering overeenkomst 
+5. Doel verwerking: administratie
+6. Locatie verwerker: binnen de EU 
+7. Bewaartermijn: tot de user het account verwijderd 
+8. Veiligheidsmaatregelen: Voorafgaande autorisatie en het encrypteren van data 
+9. Verwerkingsactiviteiten van bijzondere persoonsgegevens: NVT 
+10. Datum aanmaken register: 18 december 2020 
+11. Met welke partijen worden de personengegevens gedeeld: [Auth0](https://auth0.com/)
